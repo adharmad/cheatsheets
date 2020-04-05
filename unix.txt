@@ -6,3 +6,6 @@ grep -vf file1 file2
 
 Intersect two files
 grep -Fxf file1 file2
+
+Diff output between two commands
+diff <(cmd a) <(cmd b)

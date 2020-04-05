@@ -1,0 +1,13 @@
+Git log
+git log --oneline 
+git log --pretty=oneline
+
+Git tag
+git tag -a <tag-name> -m "<commit-message>"
+git push origin <tag-name>
+
+git create branch from tag
+git branch <new-branch-name> <tag-name>
+
+Git cherry pick:
+git cherry-pick -x <commit-id> --edit
