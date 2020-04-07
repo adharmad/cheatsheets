@@ -1,0 +1,11 @@
+Get all
+kubectl get all
+
+Get all PODs
+kubectl get pods
+
+Get all deployments
+kubectl get deployments
+
+Stop/Shutdown a POD (scale deployments to zero)
+kubectl scale --replicas=0 deployment.apps/<deployment-name>

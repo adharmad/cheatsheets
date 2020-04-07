@@ -1,6 +1,7 @@
 Git log
 git log --oneline 
 git log --pretty=oneline
+git log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 Git tag
 git tag -a <tag-name> -m "<commit-message>"
@@ -11,3 +12,12 @@ git branch <new-branch-name> <tag-name>
 
 Git cherry pick:
 git cherry-pick -x <commit-id> --edit
+
+Git reset hard
+git reset --hard <commit-id>
+
+Git reset a specific file to the HEAD
+git checkout -- <file-name>
+
+Git reflog
+git reflog show --pretty=format:'%gs ~ %gd' --date=relative
