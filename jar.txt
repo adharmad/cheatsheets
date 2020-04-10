@@ -1,0 +1,19 @@
+Create jar
+jar -cvf <filename>.jar <folder-name>
+
+Create jar with manifest
+jar -cvfm <filename>.jar <manifest-file> <folder-name>
+
+List jar file contents
+jar -tvf <filename>.jar
+
+Update jar file
+jar -uvf <filename.jar> <path-to-updated-file>
+Note: Path to updated file should exist in the jar file
+eg - In the below, the war file should have the folder structure inside it 
+jar -uvf webapp.war WEB-INF/classes/logging.properties
+
+Update jar file changing directories
+jar -uvf <filename.jar> -C <folder-name> <filename>
+eg - 
+jar -uvf webapp.war -C WEB-INF/lib logging.properties
