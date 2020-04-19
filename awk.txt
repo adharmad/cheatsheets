@@ -1,0 +1,21 @@
+# Print the entire file line by line
+awk '{print $0}' <file-name>
+
+# Print the first word in the file
+# In general $1, $2, $3... will get the first, second, third etc. words
+# awk splits the line by spaces
+awk '{print $1}' <file-name>
+
+# Using a separater other than space
+awk -F: '{print $1}' /etc/passwd
+
+# Multiple commands; changing part of the line read
+awk '{$2="Hello"; print $0}' <file-name>
+
+# Reading awk scripts from a file
+awk -f <awk-script> <arg1> <arg2>
+
+# Pre-processing
+# It is easy to create "headers"/"footers" using BEGIN/END directives
+awk 'BEGIN {print "The file begins:"}; {print $0} ; END {print "The file
+ends!"}' <file-name>

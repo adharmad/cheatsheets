@@ -4,6 +4,9 @@ kubectl get all
 Get all PODs
 kubectl get pods
 
+Delete a POD
+kubectl delete pods <pod>
+
 Get all deployments
 kubectl get deployments
 
