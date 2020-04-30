@@ -1,0 +1,15 @@
+# Create a new dotnet solution
+dotnet new sln
+
+# List solution
+dotnet sln -list
+
+# Get help on various commands
+dotnet sln -h
+
+# Add a project to a solution
+dotnet sln add <proj-name>
+
+# Add dependency between two projects in a solution
+# Via the below command, proj1 will reference (i.e. depend on) proj2
+dotnet add <proj1>/<proj1>.csproj reference <proj2>/<proj2>.csproj
