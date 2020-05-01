@@ -13,3 +13,9 @@ dotnet sln add <proj-name>
 # Add dependency between two projects in a solution
 # Via the below command, proj1 will reference (i.e. depend on) proj2
 dotnet add <proj1>/<proj1>.csproj reference <proj2>/<proj2>.csproj
+
+# Cleanup dev certificates in dotnet
+dotnet dev-certs https --clean
+
+# Create and trust new self-signed certificates
+dotnet dev-certs https
