@@ -1,5 +1,6 @@
 Find unique file types
 find . -type f | perl -ne 'print $1 if m/\.([^.\/]+)$/' | sort | uniq -c
+find . -type f | sed -n 's/..*\.//p' | sort | uniq -c
 
 Find lines in file2 that are not in file1
 grep -vf file1 file2
