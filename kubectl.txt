@@ -1,14 +1,14 @@
-Get all
+# Get all
 kubectl get all
 
-Get all PODs
+# Get all PODs
 kubectl get pods
 
-Delete a POD
+# Delete a POD
 kubectl delete pods <pod>
 
-Get all deployments
+# Get all deployments
 kubectl get deployments
 
-Stop/Shutdown a POD (scale deployments to zero)
+# Stop/Shutdown a POD (scale deployments to zero)
 kubectl scale --replicas=0 deployment.apps/<deployment-name>
