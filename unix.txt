@@ -17,5 +17,8 @@ unzip -p foo.jar META-INF/MANIFEST.MF
 # Unzip in a specific directory
 unzip -d <dir-name> <zip-file>.zip
 
+# Create zip from folder
+zip -r <zip-file>.zip <dir-name>
+
 # Format all the java files in a folder using Google formatter
 find . -name '*.java' -exec echo "Formatting " {} \; -exec java -jar google-java-format-1.8-all-deps.jar -r {} \;
